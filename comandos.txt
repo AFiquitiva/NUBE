@@ -1,7 +1,4 @@
 Done. To undo this action, use 'ef migrations remove'
-Borrar la rama de manera local, no hace que se elimine la rama si esta está en el repositorio remoto (GitLab, gitea, GitHub, etc…) Para eliminarla deberemos hacer un git push añadiendo la opción -d (--delete)
-
-git push origin --delete nombre_de_la_rama
 
 
 -SQL
@@ -16,6 +13,8 @@ CREATE DATABASE "nombre de la tabla"
 
 -muestra todas las tablas  creadas
 SELECT Name from sys.Databases
+SELECT Name from sys.Tables  // muestra las tablas  de datos en un database
+
 
 - escoje la tabla con al que se va a trabajar  o el data base
 USE TestDB
@@ -34,7 +33,7 @@ SELECT * FROM Inventory WHERE quantity > 152;
 - .NET
 dotnet  -- version
 
-- git hub
+- GIT y GITHUB
 git checkout -b <NOMBRE DE LA RAMA>  // crea una rama y se posisiona  en la rama para trabajar 
 git checkout <NOMBRE RAMA> //  cambia a la rama
 git branch // muestra todas las ramas
