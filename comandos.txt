@@ -1,3 +1,8 @@
+Done. To undo this action, use 'ef migrations remove'
+Borrar la rama de manera local, no hace que se elimine la rama si esta está en el repositorio remoto (GitLab, gitea, GitHub, etc…) Para eliminarla deberemos hacer un git push añadiendo la opción -d (--delete)
+
+git push origin --delete nombre_de_la_rama
+
 
 -SQL
 -estatus sql
@@ -32,7 +37,9 @@ dotnet  -- version
 - git hub
 git checkout -b <NOMBRE DE LA RAMA>  // crea una rama y se posisiona  en la rama para trabajar 
 git checkout <NOMBRE RAMA> //  cambia a la rama
+git branch // muestra todas las ramas
 git push --set-upstream origin <NOMBRE RAMA> // esto es para subir la rama a git hub
 git log --oneline --decorate --all --graph  // muestra todas las  ramas y origen
 git log --oneline // muestra en cada linea el comit y muestra el comit para revertir 
 git merge <RAMA A INTEGRAR> // se unen las ramas  debe ubicado  en la rama principal
+git branch -d <NOMBRE RAMA> //elimina la rama 
