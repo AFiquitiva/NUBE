@@ -1,0 +1,38 @@
+
+-SQL
+-estatus sql
+sudo systemctl status mssql-server
+
+-Ingresar a Sql
+sqlcmd -S localhost -U SA -P 8520josE
+
+- crea una base de datos
+CREATE DATABASE "nombre de la tabla"
+
+-muestra todas las tablas  creadas
+SELECT Name from sys.Databases
+
+- escoje la tabla con al que se va a trabajar  o el data base
+USE TestDB
+
+-crea la tabla 
+CREATE TABLE Inventory (id INT, name NVARCHAR(50), quantity INT)
+ 
+-Ingresa informacion a la tabla //     aqui ingres dos  datos  separados por ;
+INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2, 'orange', 154);
+
+-seleciona en la tabla segun  
+SELECT * FROM Inventory WHERE quantity > 152;
+
+
+
+- .NET
+dotnet  -- version
+
+- git hub
+git checkout -b <NOMBRE DE LA RAMA>  // crea una rama y se posisiona  en la rama para trabajar 
+git checkout <NOMBRE RAMA> //  cambia a la rama
+git push --set-upstream origin <NOMBRE RAMA> // esto es para subir la rama a git hub
+git log --oneline --decorate --all --graph  // muestra todas las  ramas y origen
+git log --oneline // muestra en cada linea el comit y muestra el comit para revertir 
+git merge <RAMA A INTEGRAR> // se unen las ramas  debe ubicado  en la rama principal
