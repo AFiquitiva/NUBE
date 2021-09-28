@@ -13,9 +13,9 @@ Configuración Migraciones
 
 Cuando estoy en el proyecto donde esta el Main / Program
 	No hay migraciones
-		•	dotnet ef migrations add Inicial --startup-project ..\HospiEnCasa.App.Consola\
+		•	dotnet ef migrations add Inicial --startup-project ../HospiEnCasa.App.Consola/
 	Ya hay migraciones
-		•	dotnet ef database update --startup-project ..\HospiEnCasa.App.Consola\
+			•	dotnet ef database update --startup-project ../HospiEnCasa.App.Consola/
 
 Cuando no estoy en el proyecto donde esta el Main / Program
 	No hay migraciones
