@@ -38,8 +38,12 @@ dotnet  -- version
 git checkout -b <NOMBRE DE LA RAMA>  // crea una rama y se posisiona  en la rama para trabajar 
 git checkout <NOMBRE RAMA> //  cambia a la rama
 git branch // muestra todas las ramas
-git push --set-upstream origin <NOMBRE RAMA> // esto es para subir la rama a git hub
+git push --set-upstream origin <NOMBRE RAMA> // esto es para subir la rama a git hub(creo q solo al principio)
 git log --oneline --decorate --all --graph  // muestra todas las  ramas y origen
 git log --oneline // muestra en cada linea el comit y muestra el comit para revertir 
 git merge <RAMA A INTEGRAR> // se unen las ramas  debe ubicado  en la rama principal
-git branch -d <NOMBRE RAMA> //elimina la rama 
+git push origin --delete <NOMBRE DE RAMA>  // elimina una rama en github
+git branch -d <NOMBRE RAMA> //elimina la rama de forma local 
+git add -a // agreg a todos los cambios a la stage 
+git commit -m <MENSAJE Q VA CON EL COMIT> // comando para hacer un comit
+git pull origin master // Descarga la rama  principal mas actualizada
