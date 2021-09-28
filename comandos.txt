@@ -47,3 +47,7 @@ git branch -d <NOMBRE RAMA> //elimina la rama de forma local
 git add . // agreg a todos los cambios a la stage 
 git commit -m <MENSAJE Q VA CON EL COMIT> // comando para hacer un comit
 git pull origin master // Descarga la rama  principal mas actualizada
+
+git reset HEAD^ --hard // tiene que estar sincronizados este borrar el local y necesita de otro para borrar en remoto
+git push origin -f  // borrar en remoto
+
