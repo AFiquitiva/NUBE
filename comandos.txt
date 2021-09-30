@@ -28,6 +28,8 @@ INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2
 -seleciona en la tabla segun  
 SELECT * FROM Inventory WHERE quantity > 152;
 
+drop  database <NOMBRE DATABASE>  // ELIMINA BASE DE DATOS
+
 
 
 - .NET
