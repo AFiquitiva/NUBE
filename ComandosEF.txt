@@ -55,5 +55,7 @@ namespace HospiEnCasa.App.Persistencia
    }   
 }
 
-dotnet add reference ..\HospiEnCasa.App.Dominio\
-dotnet add reference ..\HospiEnCasa.App.Persistencia\
+dotnet add reference ../HospiEnCasa.App.Dominio/
+dotnet add reference ../HospiEnCasa.App.Persistencia/
+dotnet new page -n Index1 -na HospiEnCasa.App.Frontend.Pages -o Pages/Pacientes/
+
