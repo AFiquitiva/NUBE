@@ -39,17 +39,20 @@ dotnet  -- version
 git checkout -b <NOMBRE DE LA RAMA>  // crea una rama y se posisiona  en la rama para trabajar 
 git checkout <NOMBRE RAMA> //  cambia a la rama
 git branch // muestra todas las ramas
+git remote add <nombre del remote usualmente "origin"> <url> //
 git push --set-upstream origin <NOMBRE RAMA> // esto es para subir la rama a git hub(creo q solo al principio)
-git push origin <Nombre rama> // sube en origin la rama especificada en el nombre 
+git push <nombre del remoto usualamente "origin"> <Nombre rama> // sube en origin la rama especificada en el nombre 
 git config -l // abre las configuraciones del git 
 git log --oneline --decorate --all --graph  // muestra todas las  ramas y origen
 git log --oneline // muestra en cada linea el comit 
 git merge <RAMA A INTEGRAR> // se unen las ramas  debe ubicado  en la rama principal
- git push origin --delete <NOMBRE DE RAMA>  // elimina una rama en github
+git push origin --delete <NOMBRE DE RAMA>  // elimina una rama en github
 git branch -d <NOMBRE RAMA> //elimina la rama de forma local 
+git restore <nobre del archivo a restaurar> // restaura un archivo que tenga en stage o con . restaura todo
+git remote  // muestra los remote que tiene el pc
 git add . // agreg a todos los cambios a la stage 
 git commit -m <MENSAJE Q VA CON EL COMIT> // comando para hacer un comit
-git pull origin master // Descarga la rama  principal mas actualizada
+git pull <nombre del remote usualmente "origin"> <nombre de la rama> // Descarga la rama  principal mas actualizada
 
 git reset HEAD^ --hard // tiene que estar sincronizados este borrar el local y necesita de otro para borrar en remoto
 git push origin -f  // borrar en remoto
