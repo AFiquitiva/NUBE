@@ -40,6 +40,8 @@ git checkout -b <NOMBRE DE LA RAMA>  // crea una rama y se posisiona  en la rama
 git checkout <NOMBRE RAMA> //  cambia a la rama
 git branch // muestra todas las ramas
 git push --set-upstream origin <NOMBRE RAMA> // esto es para subir la rama a git hub(creo q solo al principio)
+git push origin <Nombre rama> // sube en origin la rama especificada en el nombre 
+git config -l // abre las configuraciones del git 
 git log --oneline --decorate --all --graph  // muestra todas las  ramas y origen
 git log --oneline // muestra en cada linea el comit 
 git merge <RAMA A INTEGRAR> // se unen las ramas  debe ubicado  en la rama principal
