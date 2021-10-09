@@ -59,3 +59,5 @@ dotnet add reference ../HospiEnCasa.App.Dominio/
 dotnet add reference ../HospiEnCasa.App.Persistencia/
 dotnet new page -n Index1 -na HospiEnCasa.App.Frontend.Pages -o Pages/Pacientes/
 
+dotnet new page -n FormularioU -na SaludIntegral.App.Frontend.Pages -o Pages/Usuario/
+
