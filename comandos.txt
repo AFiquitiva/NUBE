@@ -6,7 +6,7 @@ Done. To undo this action, use 'ef migrations remove'  @
 sudo systemctl status mssql-server
 
 -Ingresar a Sql
-sqlcmd -S localhost -U SA -P 8520josE
+sqlcmd -S localhost -U SA -P 123456aZ
 
 - crea una base de datos
 CREATE DATABASE "nombre de la tabla"
