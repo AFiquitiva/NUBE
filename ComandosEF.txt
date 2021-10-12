@@ -35,6 +35,8 @@ namespace HospiEnCasa.App.Persistencia
    }   
 }
 
+// conexion linux jose
+               .UseSqlServer("Data Source =.; Initial Catalog = EPSSaludintegralData ;uid=SA ;pwd=8520josE");
 
 using Microsoft.EntityFrameworkCore;
 using HospiEnCasa.App.Dominio;
